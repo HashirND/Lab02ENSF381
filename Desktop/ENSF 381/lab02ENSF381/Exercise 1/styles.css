@@ -1,6 +1,4 @@
-/****************************************
- * 1) BASE BODY & TEXT STYLES
- ****************************************/
+
  body {
   margin: 0;
   padding: 0;
@@ -9,29 +7,21 @@
   color: #3d3d3d;
 }
 
-/****************************************
- * 2) TABLE 1 (TOP SECTION) STYLES
- *    EXACT fixed width to match bottom
- ****************************************/
+
 .table1 {
-  /* We'll match the bottom table's total width (1141px)
-     so banner & text line up exactly with the boxes below. */
+
   width: 1141px;
-  margin: 0 auto; /* center the top table horizontally */
+  margin: 0 auto; 
   border-collapse: collapse; 
-  /* no border-spacing needed for top table, so items line up flush */
 }
 
-/* The banner fills the entire .table1 width exactly (1141px) */
 .banner {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/****************************************
- * 3) HEADINGS & PARAGRAPHS
- ****************************************/
+
 h1, h2, h3 {
   margin: 20px 0;
 }
@@ -46,20 +36,15 @@ hr {
   margin: 2em 0;
 }
 
-/****************************************
- * 4) TABLE 2 (BOTTOM SECTION) STYLES
- *    EXACT same total width = 1141px
- ****************************************/
+
 .table2 {
-  /* same 1141px width, centered, so top & bottom align perfectly */
+
   width: 1141px;
   margin: 0 auto;
   border-collapse: separate;
-  /* 1px horizontal gap, 20px vertical gap => same as before */
   border-spacing: 1px 20px;
 }
 
-/* Force each cell to be exactly 570x400. 2 columns => 1141 total (570+570+1 gap) */
 .td_image_width,
 .td_box_width {
   width: 570px;
@@ -67,37 +52,32 @@ hr {
   vertical-align: middle;
 }
 
-/* Images => 570x400 */
 .td_image_width img {
   display: block;
   width: 570px;
   height: 400px;
 }
 
-/****************************************
- * 5) BOX/BACKGROUND CLASSES
- ****************************************/
+
 .box1 {
-  background-color: darkred; /* or #c10606 */
+  background-color: rgb(145, 1, 1);
   text-align: center;
 }
 .box2 {
-  background-color: deeppink; /* #ff1493 */
+  background-color: rgb(250, 19, 142); 
   text-align: center;
 }
 .box3 {
-  background-color: brown;
+  background-color: rgb(159, 41, 41);
   text-align: center;
 }
 
-/* White text, 10px padding, no margin inside boxes */
 .box_text_color {
   color: #ffffff;
   padding: 10px;
   margin: 0;
 }
 
-/* Optional link styling in the boxes */
 .box_text_color a {
   color: #ffffff;
   text-decoration: underline;
