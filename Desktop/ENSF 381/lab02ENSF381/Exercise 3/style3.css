@@ -1,0 +1,88 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVBAR STYLES */
+.navbar {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar-item {
+    position: relative;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar-item:hover {
+    background-color: #bdbbbb;
+}
+
+/* DROPDOWN STYLES */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    border: 1px solid #e0e0e0; /* Adds a border to the dropdown */
+}
+
+.dropdown a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #dcdcdc; /* Divider line between items */
+}
+
+.dropdown a:last-child {
+    border-bottom: none; /* Remove border from the last item */
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+.navbar-item:hover .dropdown {
+    display: block;
+}
+
+/* FLEX CONTAINER AND ITEM STYLES */
+.container {
+    display: flex;
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.item {
+    flex: 1;
+    padding: 20px;
+    margin: 5px;
+    background-color: #b8dcef; /* Updated to match the blue color */
+    border: 2px solid #00008b; /* Dark blue border */
+    text-align: center;
+    color: black; /* Black text */
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Specific Styling for SCHULICH School */
+.container .item:first-child {
+    background-color: #b8dcef; /* Same blue as the other boxes */
+    border: 2px solid #00008b; /* Dark blue border */
+    color: black; /* Black text */
+}
